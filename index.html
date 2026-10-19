@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Hub</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-book-half me-2"></i>Learning Hub
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduction">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categories">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+        </ul>
+
+        <!-- Search Form -->
+        <form class="search-form d-flex me-lg-3 mb-3 mb-lg-0" id="searchForm">
+          <input
+            type="search"
+            class="form-control search-input"
+            id="searchInput"
+            placeholder="Search resources..."
+            aria-label="Search resources"
+          />
+          <button
+            type="button"
+            class="btn search-btn"
+            id="searchToggle"
+            aria-label="Open search"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <a href="#profile" class="profile-link" aria-label="Profile">
+          <i class="bi bi-person-circle"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <span class="hero-badge">
+            <i class="bi bi-stars me-2"></i>
+            Your journey starts here
+          </span>
+
+          <h1 class="hero-title mt-4">
+            Learn Something New.
+            <span>Build Your Future.</span>
+          </h1>
+
+          <p class="hero-description mt-3">
+            Discover helpful learning resources, develop valuable skills,
+            and take the next step toward your personal and professional goals.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#resources" class="btn hero-primary-btn">
+              Explore Resources
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+
+            <a href="#categories" class="btn hero-secondary-btn">
+              Browse Categories
+            </a>
+          </div>
+
+          <div class="hero-stats mt-5">
+            <div>
+              <h3>Learn</h3>
+              <p>At your own pace</p>
+            </div>
+            <div>
+              <h3>Grow</h3>
+              <p>Every single day</p>
+            </div>
+            <div>
+              <h3>Achieve</h3>
+              <p>Your learning goals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+              alt="Student learning with a laptop"
+              class="hero-image img-fluid"
+            />
+
+            <div class="hero-floating-card">
+              <div class="hero-floating-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <div>
+                <h6>Keep Growing</h6>
+                <p>One lesson at a time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="intro-section" id="introduction">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-badge">WHY LEARNING HUB?</span>
+
+        <h2 class="intro-title mt-3">
+          Your Journey to Better Learning
+        </h2>
+
+        <p class="intro-description">
+          A simple place to discover knowledge, improve your abilities,
+          and build confidence one step at a time.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="intro-card text-center h-100">
+            <div class="intro-icon">
+              <i class="bi bi-book"></i>
+            </div>
+
+            <h3>Learn Something New</h3>
+
+            <p>
+              Explore useful resources and discover ideas that help you
+              understand new topics and expand your knowledge.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="intro-card text-center h-100">
+            <div class="intro-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+
+            <h3>Build Your Skills</h3>
+
+            <p>
+              Strengthen your abilities through practical guides,
+              helpful lessons, and opportunities to practice.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="intro-card text-center h-100">
+            <div class="intro-icon">
+              <i class="bi bi-trophy"></i>
+            </div>
+
+            <h3>Grow with Confidence</h3>
+
+            <p>
+              Keep making progress, celebrate small achievements,
+              and take confident steps toward your goals.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured-section" id="featured">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-badge">HANDPICKED FOR YOU</span>
+
+        <h2 class="featured-title mt-3">
+          Featured Learning Resources
+        </h2>
+
+        <p class="featured-description">
+          Start with these recommended topics and find something
+          new to learn today.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="featured-card h-100">
+            <div class="featured-image featured-image-purple">
+              <i class="bi bi-code-slash"></i>
+            </div>
+
+            <div class="featured-content">
+              <span class="featured-tag">Popular</span>
+
+              <h3>Introduction to Web Development</h3>
+
+              <p>
+                Learn the basics of HTML, CSS, and JavaScript
+                to understand how websites are created.
+              </p>
+
+              <div class="featured-footer">
+                <span><i class="bi bi-clock me-1"></i> Beginner</span>
+                <a href="#resources">
+                  Explore <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="featured-card h-100">
+            <div class="featured-image featured-image-pink">
+              <i class="bi bi-palette"></i>
+            </div>
+
+            <div class="featured-content">
+              <span class="featured-tag">Creative</span>
+
+              <h3>Fundamentals of Graphic Design</h3>
+
+              <p>
+                Discover colors, typography, layouts, and design
+                principles to create more engaging visuals.
+              </p>
+
+              <div class="featured-footer">
+                <span><i class="bi bi-clock me-1"></i> Beginner</span>
+                <a href="#resources">
+                  Explore <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="featured-card h-100">
+            <div class="featured-image featured-image-green">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+
+            <div class="featured-content">
+              <span class="featured-tag">Recommended</span>
+
+              <h3>Essential Skills for Success</h3>
+
+              <p>
+                Develop communication, time management, and
+                problem-solving skills for everyday life and work.
+              </p>
+
+              <div class="featured-footer">
+                <span><i class="bi bi-clock me-1"></i> All levels</span>
+                <a href="#resources">
+                  Explore <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section" id="categories-section">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-badge">EXPLORE YOUR INTERESTS</span>
+
+        <h2 class="categories-title mt-3">
+          Browse Learning Categories
+        </h2>
+
+        <p class="categories-description">
+          Find learning materials that match your interests,
+          develop new abilities, and discover opportunities to grow.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Technology -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card" id="categories">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+              alt="Electronic technology components"
+              class="category-image"
+              loading="lazy"
+            />
+
+            <div class="category-content">
+              <span class="category-tag">Technology</span>
+
+              <h3>Technology</h3>
+
+              <p>
+                Explore programming, web development, and digital tools
+                to build your technical knowledge.
+              </p>
+
+              <a href="#resources" class="category-btn">
+                View Resources
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card" id="categories">
+            <img
+              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80"
+              alt="Notebook and writing tools on a desk"
+              class="category-image"
+              loading="lazy"
+            />
+
+            <div class="category-content">
+              <span class="category-tag">Creative</span>
+
+              <h3>Design</h3>
+
+              <p>
+                Learn about graphic design, visual storytelling,
+                color theory, and creative thinking.
+              </p>
+
+              <a href="#resources" class="category-btn">
+                View Resources
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card" id="categories">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+              alt="Business analytics displayed on a laptop"
+              class="category-image"
+              loading="lazy"
+            />
+
+            <div class="category-content">
+              <span class="category-tag">Professional</span>
+
+              <h3>Business</h3>
+
+              <p>
+                Discover business fundamentals, entrepreneurship,
+                productivity, and project management.
+              </p>
+
+              <a href="#resources" class="category-btn">
+                View Resources
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Development -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="category-card" id="categories">
+            <img
+              src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&q=80"
+              alt="Notebook and workspace for personal planning"
+              class="category-image"
+              loading="lazy"
+            />
+
+            <div class="category-content">
+              <span class="category-tag">Self-Growth</span>
+
+              <h3>Personal Development</h3>
+
+              <p>
+                Improve your communication, time management,
+                confidence, and everyday habits.
+              </p>
+
+              <a href="#resources" class="category-btn">
+                View Resources
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Resource Section -->
+  <section class="resources-section" id="resources">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Left Side: Text -->
+        <div class="col-lg-6">
+          <span class="section-badge">FEATURED RESOURCE</span>
+
+          <h2 class="resources-title mt-4">
+            Take Your Skills to the <span>Next Level</span>
+          </h2>
+
+          <p class="resources-description mt-3">
+            Discover our handpicked learning resources designed to help
+            you gain new knowledge, develop practical skills, and grow
+            with confidence. Start learning at your own pace today.
+          </p>
+
+          <div class="resources-benefits mt-4">
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Easy-to-follow learning materials
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Resources for beginners and learners
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill"></i>
+              Learn anytime, at your own pace
+            </p>
+          </div>
+
+          <a href="#categories" class="resources-btn mt-3">
+            Explore Resources
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="col-lg-6">
+          <div class="resources-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+              alt="Learner studying with a laptop"
+              class="resources-image"
+              loading="lazy"
+            />
+
+            <div class="resources-image-card">
+              <div class="resources-image-icon">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+
+              <div>
+                <h5>Keep Learning</h5>
+                <p>Small steps, big progress.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <span class="section-badge">GET TO KNOW US</span>
+        <h2 class="about-title mt-3">About Learning Hub</h2>
+        <p class="about-description">
+          A place where curiosity meets opportunity and learning
+          becomes a journey of growth.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Left Column: Mission -->
+        <div class="col-lg-7">
+          <div class="about-card mission-card h-100" id="mission">
+
+            <div class="about-icon">
+              <i class="bi bi-bullseye"></i>
+            </div>
+
+            <h3>Our Mission</h3>
+
+            <p>
+              Our mission is to make learning accessible, practical,
+              and enjoyable for everyone. We aim to provide helpful
+              educational resources that empower learners to develop
+              new skills, explore their interests, and achieve their
+              personal and professional goals.
+            </p>
+
+            <p>
+              We believe that every small step toward learning can
+              create meaningful opportunities for a better future.
+            </p>
+
+            <div class="mission-highlight">
+              <i class="bi bi-lightbulb-fill"></i>
+              <span>Learn today. Grow tomorrow.</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Contact Information -->
+        <div class="col-lg-5" id="contact">
+          <div class="about-card contact-card h-100">
+
+            <div class="about-icon">
+              <i class="bi bi-chat-dots"></i>
+            </div>
+
+            <h3>Get in Touch</h3>
+
+            <p class="contact-intro">
+              Have questions, suggestions, or feedback?
+              We'd love to hear from you.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div>
+                <h4>Email Us</h4>
+                <a href="mailto:hello@learninghub.com">
+                  hello@learninghub.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+
+              <div>
+                <h4>Availability</h4>
+                <p>We're happy to hear from you anytime.</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+
+              <div>
+                <h4>Our Platform</h4>
+                <p>Learning resources for curious minds.</p>
+              </div>
+            </div>
+
+            <a
+              href="mailto:hello@learninghub.com"
+              class="contact-btn"
+            >
+              Contact Us
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">
+        &copy; 2026 Learning Hub. Keep learning, keep growing.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Search Functionality -->
+  <script>
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchInput");
+    const searchToggle = document.getElementById("searchToggle");
+
+    searchToggle.addEventListener("click", function () {
+      searchForm.classList.toggle("active");
+
+      if (searchForm.classList.contains("active")) {
+        searchInput.focus();
+      } else {
+        searchInput.value = "";
+      }
+    });
+
+    searchInput.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        searchForm.classList.remove("active");
+        searchInput.value = "";
+        searchToggle.focus();
+      }
+    });
+
+    searchForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const searchTerm = searchInput.value.trim();
+
+      if (searchTerm !== "") {
+        alert("You searched for: " + searchTerm);
+      }
+    });
+  </script>
+
+</body>
+</html>
